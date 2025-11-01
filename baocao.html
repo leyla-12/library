@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Báo cáo thống kê - Mai Dich Library</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">Mai Dich Library</div>
+    <div class="nav">
+      <a href="docgia.html">Độc giả</a>
+      <a href="sach.html">Sách</a>
+      <a href="phieumuon.html">Phiếu mượn trả</a>
+      <a href="baocao.html" class="active">Báo cáo thống kê</a>
+      <a href="index.html">Thoát</a>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="card">
+      <h1 class="section-title">Báo cáo & thống kê</h1>
+      <p class="subtitle">Các báo cáo mà thư viện cần theo mô tả bài toán.</p>
+
+      <div class="actions">
+        <button class="btn-primary" onclick="location.href='#bc-sach-dang-muon'">Báo cáo sách đang được mượn</button>
+        <button class="btn-secondary" onclick="location.href='#bc-docgia-muon-nhieu'">Báo cáo độc giả mượn nhiều</button>
+        <button class="btn-secondary" onclick="location.href='#bc-sach-yeu-thich'">Báo cáo sách được yêu thích</button>
+      </div>
+    </div>
+
+    <div id="bc-sach-dang-muon" class="card">
+      <h1 class="section-title">Báo cáo sách đang được mượn</h1>
+      <p class="subtitle">Danh sách những đầu sách hiện đang được mượn cùng hạn trả tương ứng.</p>
+      <table class="table">
+        <tr>
+          <th>Mã sách</th>
+          <th>Tên sách</th>
+          <th>Mã phiếu</th>
+          <th>Mã độc giả</th>
+          <th>Hạn trả</th>
+        </tr>
+        <tr>
+          <td>S0001</td>
+          <td>Giáo trình Tin học 6</td>
+          <td>PM0001</td>
+          <td>DG0001</td>
+          <td>2025-11-05</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="bc-docgia-muon-nhieu" class="card">
+      <h1 class="section-title">Báo cáo độc giả mượn nhiều</h1>
+      <p class="subtitle">Liệt kê những độc giả có số lượng mượn lớn trong kỳ.</p>
+      <table class="table">
+        <tr>
+          <th>Mã độc giả</th>
+          <th>Tên độc giả</th>
+          <th>Số lượt mượn</th>
+        </tr>
+        <tr>
+          <td>DG0001</td>
+          <td>Lò Thị Tuyết Nhung</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>DG0002</td>
+          <td>Trần Quỳnh Anh</td>
+          <td>9</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="bc-sach-yeu-thich" class="card">
+      <h1 class="section-title">Báo cáo sách được yêu thích</h1>
+      <p class="subtitle">Thống kê đầu sách có lượt mượn cao nhất.</p>
+      <table class="table">
+        <tr>
+          <th>Mã sách</th>
+          <th>Tên sách</th>
+          <th>Lượt mượn</th>
+        </tr>
+        <tr>
+          <td>S0003</td>
+          <td>Những người khốn khổ</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>S0005</td>
+          <td>To Kill a Mockingbird</td>
+          <td>18</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="footer">© THCS Mai Dịch – Báo cáo thư viện</div>
+</body>
+</html>

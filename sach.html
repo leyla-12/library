@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>QL sách - Mai Dich Library</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">Mai Dich Library</div>
+    <div class="nav">
+      <a href="docgia.html">Độc giả</a>
+      <a href="sach.html" class="active">Sách</a>
+      <a href="phieumuon.html">Phiếu mượn trả</a>
+      <a href="baocao.html">Báo cáo</a>
+      <a href="index.html">Thoát</a>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="card">
+      <h1 class="section-title">Quản lý thông tin sách</h1>
+      <p class="subtitle">Thêm sách mới, cập nhật thông tin, xóa sách, tra cứu.</p>
+
+      <div class="form-grid">
+        <div>
+          <label class="label">Mã sách</label>
+          <input type="text" placeholder="S0001" />
+        </div>
+        <div>
+          <label class="label">Tên sách</label>
+          <input type="text" placeholder="Giáo trình Tin học 6" />
+        </div>
+        <div>
+          <label class="label">Thể loại</label>
+          <input type="text" placeholder="Tham khảo / Văn học / Khoa học" />
+        </div>
+        <div>
+          <label class="label">Tác giả</label>
+          <input type="text" placeholder="NXB Giáo dục" />
+        </div>
+        <div>
+          <label class="label">Năm XB</label>
+          <input type="number" placeholder="2024" />
+        </div>
+        <div>
+          <label class="label">Số lượng</label>
+          <input type="number" placeholder="10" />
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn-primary">Thêm sách mới</button>
+        <button class="btn-secondary">Cập nhật thông tin sách</button>
+        <button class="btn-secondary" style="color:#dc2626;border-color:#fecaca;">Xóa sách</button>
+        <button class="btn-secondary">Tra cứu thông tin sách</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h1 class="section-title">Danh sách sách</h1>
+      <table class="table">
+        <tr>
+          <th>Mã sách</th>
+          <th>Tên sách</th>
+          <th>Thể loại</th>
+          <th>Số lượng</th>
+        </tr>
+        <tr>
+          <td>S0001</td>
+          <td>Giáo trình Tin học 6</td>
+          <td>Tham khảo</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>S0002</td>
+          <td>Văn học Việt Nam</td>
+          <td>Văn học</td>
+          <td>5</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

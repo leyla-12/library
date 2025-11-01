@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>QL phiếu mượn trả - Mai Dich Library</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">Mai Dich Library</div>
+    <div class="nav">
+      <a href="docgia.html">Độc giả</a>
+      <a href="sach.html">Sách</a>
+      <a href="phieumuon.html" class="active">Phiếu mượn trả</a>
+      <a href="baocao.html">Báo cáo</a>
+      <a href="index.html">Thoát</a>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="card">
+      <h1 class="section-title">Quản lý phiếu mượn – trả</h1>
+      <p class="subtitle">Lập phiếu, cập nhật trạng thái, tra cứu phiếu.</p>
+
+      <div class="form-grid">
+        <div>
+          <label class="label">Mã phiếu mượn</label>
+          <input type="text" placeholder="PM0001" />
+        </div>
+        <div>
+          <label class="label">Mã độc giả</label>
+          <input type="text" placeholder="DG0001" />
+        </div>
+        <div>
+          <label class="label">Ngày mượn</label>
+          <input type="date" />
+        </div>
+        <div>
+          <label class="label">Hạn trả</label>
+          <input type="date" />
+        </div>
+        <div>
+          <label class="label">Trạng thái</label>
+          <select>
+            <option>Đang mượn</option>
+            <option>Đã trả</option>
+            <option>Quá hạn</option>
+          </select>
+        </div>
+        <div style="grid-column:1/-1;">
+          <label class="label">Danh sách sách mượn (mã sách, số lượng)</label>
+          <textarea rows="3" placeholder="S0001 - 1 bản&#10;S0003 - 2 bản"></textarea>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn-primary">Thêm phiếu mới</button>
+        <button class="btn-secondary">Cập nhật thông tin phiếu</button>
+        <button class="btn-secondary" style="color:#dc2626;border-color:#fecaca;">Xóa phiếu</button>
+        <button class="btn-secondary">Tra cứu thông tin phiếu</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h1 class="section-title">Danh sách phiếu mượn</h1>
+      <table class="table">
+        <tr>
+          <th>Mã phiếu</th>
+          <th>Mã độc giả</th>
+          <th>Ngày mượn</th>
+          <th>Hạn trả</th>
+          <th>Trạng thái</th>
+        </tr>
+        <tr>
+          <td>PM0001</td>
+          <td>DG0001</td>
+          <td>2025-10-15</td>
+          <td>2025-10-30</td>
+          <td><span class="badge">Đang mượn</span></td>
+        </tr>
+        <tr>
+          <td>PM0002</td>
+          <td>DG0002</td>
+          <td>2025-10-10</td>
+          <td>2025-10-25</td>
+          <td><span class="badge">Đã trả</span></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

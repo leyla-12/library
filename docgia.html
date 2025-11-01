@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>QL độc giả - Mai Dich Library</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">Mai Dich Library</div>
+    <div class="nav">
+      <a href="docgia.html" class="active">Độc giả</a>
+      <a href="sach.html">Sách</a>
+      <a href="phieumuon.html">Phiếu mượn trả</a>
+      <a href="baocao.html">Báo cáo</a>
+      <a href="index.html">Thoát</a>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="card">
+      <h1 class="section-title">Quản lý thông tin độc giả</h1>
+      <p class="subtitle">Thêm mới / Cập nhật / Xóa / Tra cứu độc giả.</p>
+
+      <div class="form-grid">
+        <div>
+          <label class="label">Mã độc giả</label>
+          <input type="text" placeholder="DG0001" />
+        </div>
+        <div>
+          <label class="label">Tên độc giả</label>
+          <input type="text" placeholder="Nguyễn Thị Lan" />
+        </div>
+        <div>
+          <label class="label">Ngày sinh</label>
+          <input type="date" />
+        </div>
+        <div>
+          <label class="label">Giới tính</label>
+          <select>
+            <option>Nam</option>
+            <option>Nữ</option>
+            <option>Khác</option>
+          </select>
+        </div>
+        <div>
+          <label class="label">Lớp / Chức vụ</label>
+          <input type="text" placeholder="9A3 / Giáo viên" />
+        </div>
+        <div>
+          <label class="label">Số điện thoại</label>
+          <input type="text" placeholder="09..." />
+        </div>
+        <div style="grid-column:1/-1;">
+          <label class="label">Địa chỉ</label>
+          <input type="text" placeholder="Mai Dịch, Cầu Giấy, Hà Nội" />
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn-primary">Thêm độc giả mới</button>
+        <button class="btn-secondary">Cập nhật thông tin</button>
+        <button class="btn-secondary" style="color:#dc2626;border-color:#fecaca;">Xóa độc giả</button>
+        <button class="btn-secondary">Tra cứu</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h1 class="section-title">Danh sách độc giả</h1>
+      <table class="table">
+        <tr>
+          <th>Mã DG</th>
+          <th>Tên độc giả</th>
+          <th>Lớp / Chức vụ</th>
+          <th>SĐT</th>
+          <th>Trạng thái</th>
+        </tr>
+        <tr>
+          <td>DG0001</td>
+          <td>Lò Thị Tuyết Nhung</td>
+          <td>HS 9A3</td>
+          <td>09xxxxxxx</td>
+          <td><span class="badge">Đang mượn</span></td>
+        </tr>
+        <tr>
+          <td>DG0002</td>
+          <td>Trần Quỳnh Anh</td>
+          <td>GV Tin</td>
+          <td>09xxxxxxx</td>
+          <td><span class="badge">Bình thường</span></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
